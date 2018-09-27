@@ -18,7 +18,7 @@ This is a compilation of my personal git best practices to be used as a referenc
 8. Open Git Bash
     * Right Click in the folder and click Git Bash here
 9. Clone Repository
-    * Right click the bash and click paste or type **git clone *branch url* **
+    * Right click the bash and click paste or type **git clone *branch url***
 
 NOTE: It is beneficial to show hidden items in your folder explorer as this will show all the git, hidden files for later use
 
@@ -36,20 +36,20 @@ NOTE: It is beneficial to show hidden items in your folder explorer as this will
 3. Ensure no uncommitted code
     * **git status**
 4. Checkout the remote branch to your local computer
-    * **git checkout -b *local branch name* *remote branch name* **
-    * The local name can be anything, but if it does not match the remote branch names ending (i.e the part after the last \) you will have to manually set the upstream with ** git branch -u *remote branch name* **. If you do not, that is also fine, but when pushing code commits, there will be an additional requirement to clarify the remote branch you are pushing to
+    * **git checkout -b *local branch name* *remote branch name***
+    * The local name can be anything, but if it does not match the remote branch names ending (i.e the part after the last \) you will have to manually set the upstream with **git branch -u *remote branch name***. If you do not, that is also fine, but when pushing code commits, there will be an additional requirement to clarify the remote branch you are pushing to
 
 ### Change Branch ###
 1. Check if the branch is found locally
    * **git branch**
 2. If your destination branch is found locally
-    * **git checkout *your destination branch* **
+    * **git checkout *your destination branch***
     * The branch in the prompt should change to the name of the destination branch if done correctly
 3. If your destination branch is NOT found locally, you will have to checkout the remote branch
 
 ### Delete Branch ###
 1. Delete the local branch 
-    * **git branch -d *your to be deleted branch* **
+    * **git branch -d *your to be deleted branch***
 
 NOTE: Remotes branches can be deleted, but to reduce error do this via the branch tab. Typically, branches will be self deleted once a pull request has been approved for the desired branch so no need to manually delete them after
 
@@ -61,13 +61,13 @@ NOTE: This will destroy all uncommitted code
 
 ### Revert Branch ###
 1. Checkout a copy at that commit
-    * **git checkout *commit ID* **
+    * **git checkout *commit ID***
 2. Commit the code and push to the remote branch to override the commits you want to be removed
 
 ### Rebase Branch ###
 1. Be on the branch to be rebased
 2. Rebase your current branch with the base branch
-    * **git rebase *your base branch* **
+    * **git rebase *your base branch***
 3. Push the changes to the remote repository
 4. If it states that the branches have diverged, force push it and overwrite the repository with the current code
     * **git push -f**
@@ -77,7 +77,7 @@ NOTE: Rebasing can be quite a difficult task. It is often better to merge instea
 ### Merge Branch ###
 1. Checkout the branch that your branch diverged from
 2. Merge the branch into the base branch
-    * **git merge *your branch name* **
+    * **git merge *your branch name***
 3. Push the changes to the repository
 
 
@@ -89,7 +89,7 @@ NOTE: Rebasing can be quite a difficult task. It is often better to merge instea
 2. If all red, modified files are to be committed add all to the commit
     * **git add -A**
 3. If you have to choose which files to be committed, add each one indivitually
-    * **git add *your file name* **
+    * **git add *your file name***
 4. Use **git status** to check if all the files to be committed have turned green
 
 ### Commit Code ###
@@ -102,7 +102,7 @@ NOTE: Rebasing can be quite a difficult task. It is often better to merge instea
 4. Check if there has been a commit added to your local repository
     * **git status**
 
-NOTE: You make also use **git commit -m *your message here* ** to do the commit message in line.
+NOTE: You make also use **git commit -m *your message here*** to do the commit message in line.
 
 ### Push Commits ###
 1. Ensure there are commits on your local branch
