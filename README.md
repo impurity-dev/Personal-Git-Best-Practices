@@ -47,9 +47,15 @@ NOTE: It is beneficial to show hidden items in your folder explorer as this will
     * The branch in the prompt should change to the name of the destination branch if done correctly
 3. If your destination branch is NOT found locally, you will have to checkout the remote branch
 
-### Delete Branch ###
+### Delete Local Branch ###
 1. Delete the local branch 
     * **git branch -d *your to be deleted branch***
+
+### Delete Remote Branch ##
+1. Delete the remote branch
+   * **git push *remote branch name* --delete *local branch name***
+2. Prune local workspace
+   * **git remote prune origin**
 
 NOTE: Remotes branches can be deleted, but to reduce error do this via the branch tab. Typically, branches will be self deleted once a pull request has been approved for the desired branch so no need to manually delete them after
 
@@ -79,7 +85,6 @@ NOTE: Rebasing can be quite a difficult task. It is often better to merge instea
 2. Merge the branch into the base branch
     * **git merge *your branch name***
 3. Push the changes to the repository
-
 
 ## Code Management ##
 
